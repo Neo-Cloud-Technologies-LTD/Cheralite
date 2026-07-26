@@ -1,15 +1,17 @@
+import { Hero } from "../components/sections/Hero";
+import { AboutPreview } from "../components/sections/AboutPreview";
+import { ServicesPreview } from "../components/sections/ServicesPreview";
+import { Testimonials } from "../components/sections/Testimonials";
+import { CTABanner } from "../components/sections/CTABanner";
+
 const HomePage = () => {
   return (
     <>
-      {/* <Hero /> */}
-      {/* <About /> */}
-      {/* <Services /> */}
-      <div className="text-center py-20">
-        <h1 className="text-4xl font-bold text-primary">
-          Welcome to the Project
-        </h1>
-        <p className="text-secondary">Sections will be added here.</p>
-      </div>
+      <Hero />
+      <AboutPreview />
+      <ServicesPreview />
+      <Testimonials />
+      <CTABanner />
     </>
   );
 };

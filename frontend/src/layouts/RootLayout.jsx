@@ -1,14 +1,16 @@
 import { Outlet } from "react-router-dom";
+import { Navbar } from "../components/layout/Navbar";
+import { Footer } from "../components/layout/Footer";
 
 
 export const RootLayout = () => {
   return (
     <div className="flex flex-col min-h-screen">
-      {/* <Navbar /> will go here */}
+      <Navbar/> 
       <main className="flex-grow">
         <Outlet /> {/* This is where your page sections will render */}
       </main>
-      {/* <Footer /> will go here */}
+      <Footer/>
     </div>
   );
 };

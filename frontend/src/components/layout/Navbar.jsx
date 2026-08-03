@@ -1,68 +1,36 @@
-import React from 'react'
-import './Navbar.css'
+// import React from 'react'
+
+// const Navbar = () => {
+//   return (
+//     <div className=''>
+//       Navbar
+//       </div>
+//   )
+// }
+
+// export default Navbar
 import logo from '../../assets/cheralite-logo.png'
 
 
+function Navbar (){
 
-const Navbar = () => {
   return (
-    <div className='navbar'>
+    <div className="w-full h-full absolute">
+      <header className="flex justify-between items-center text-black py-6 px-8" md:px-32 bg-white drop-shadow-md>
 
-    {/* <img src={logo} alt="" className='logo'/> */}
-    <ul>
-      <li>HOME</li>
-      <li>ABOUT</li>
-      <li>PROJECTS</li>
-      <li>SERVICES</li>
-      <li className='contact'>CONTACT US</li>
+    <a href=""><img src="{logo}" alt="" className='w-52 hover:scale-105 transition-all'/></a>
+
+    <ul className='hidden xl:flex items-center gap-12 font-semibold text-base'>
+      <li className='p-3 hover:bg-sky-400 hover:text-white rounded-md transition-all cursor-pointer'>Home</li>
+      <li className='p-3 hover:bg-sky-400 hover:text-white rounded-md transition-all cursor-pointer'>About</li>
+      <li className='p-3 hover:bg-sky-400 hover:text-white rounded-md transition-all cursor-pointer'>Projects</li>
+      <li className='p-3 hover:bg-sky-400 hover:text-white rounded-md transition-all cursor-pointer'>Services</li>
+      <li className='p-3 hover:bg-sky-400 hover:text-white rounded-md transition-all cursor-pointer'>Contact Us</li>
     </ul>
+      </header>
 
-    
     </div>
-
-    
-    
   )
 }
 
 export default Navbar
-
-
-
-
-
-
-
-
-
-
-
-// import { Link } from "react-router-dom";
-// import './Navbar.css'
-
-// export const Navbar = () => {
-//   return (
-    
-      
-//     <nav className="bg-primary text-white shadow-lg">
-//       <div className="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
-//         <Link to="/" className="text-2xl font-bold">
-//           YourLogo
-//         </Link>
-
-//         {/* Navigation Links */}
-//         <div className="space-x-6 hidden md:flex">
-//           <Link to="/" className="hover:text-accent transition">Home</Link>
-//           <Link to="/about" className="hover:text-accent transition">About</Link> 
-//           <Link to="/services" className="hover:text-accent transition">Services</Link>
-//           <Link to="/contact" className="hover:text-accent transition">Contact</Link>
-//         </div>
-
-//         {/* Mobile Hamburger (Intern can finish this later) */}
-//         <button className="md:hidden text-white">
-//           ☰
-//         </button>
-//       </div>
-//     </nav>
-//   );
-// };

@@ -13,6 +13,7 @@ export const Navbar = () => {
         <div className="space-x-6 hidden md:flex">
           <Link to="/" className="hover:text-accent transition">Home</Link>
           <Link to="/about" className="hover:text-accent transition">About</Link>
+          <Link to="/projects" className="hover:text-accent transition">Projects</Link>
           <Link to="/services" className="hover:text-accent transition">Services</Link>
           <Link to="/contact" className="hover:text-accent transition">Contact</Link>
         </div>

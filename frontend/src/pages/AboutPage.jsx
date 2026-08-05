@@ -1,12 +1,16 @@
+import React from 'react'
+import About1 from '../components/sections/About1'
+import About2 from '../components/sections/About2'
+import About3 from '../components/sections/About3'
+
 const AboutPage = () => {
   return (
-    <div className="py-10">
-      <h1 className="text-4xl font-bold text-center text-primary">About Us</h1>
-      <p className="text-center text-secondary mt-4">
-        Intern working on this page: Build the About section here.
-      </p>
-    </div>
-  );
-};
+    <>
+      <About1/>
+      <About2/>
+      <About3/>
+    </>
+  )
+}
 
-export default AboutPage;
+export default AboutPage

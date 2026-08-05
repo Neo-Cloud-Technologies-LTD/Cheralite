@@ -1,12 +1,14 @@
+import React from 'react'
+import Contact1 from '../components/sections/Contact1'
+import Contact2 from '../components/sections/Contact2'
+
 const ContactPage = () => {
   return (
-    <div className="py-10">
-      <h1 className="text-4xl font-bold text-center text-primary">Contact Us</h1>
-      <p className="text-center text-secondary mt-4">
-        Intern working on this page: Build the Contact Form & Map here.
-      </p>
-    </div>
-  );
-};
+    <>
+      <Contact1/>
+      <Contact2/>
+    </>
+  )
+}
 
-export default ContactPage;
+export default ContactPage

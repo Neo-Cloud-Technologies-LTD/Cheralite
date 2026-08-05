@@ -1,17 +1,15 @@
-import { Hero } from "../components/sections/Hero";
-import { AboutPreview } from "../components/sections/AboutPreview";
-import { ServicesPreview } from "../components/sections/ServicesPreview";
-import { Testimonials } from "../components/sections/Testimonials";
-import { CTABanner } from "../components/sections/CTABanner";
+import Home1 from '../components/sections/Home1';
+import Home2 from "../components/sections/Home2";
+import Home3 from '../components/sections/Home3';
+import Home4 from '../components/sections/Home4';
 
 const HomePage = () => {
   return (
     <>
-      <Hero />
-      <AboutPreview />
-      <ServicesPreview />
-      <Testimonials />
-      <CTABanner />
+      <Home1/>
+      <Home2/>
+      <Home3/>
+      <Home4/>
     </>
   );
 };

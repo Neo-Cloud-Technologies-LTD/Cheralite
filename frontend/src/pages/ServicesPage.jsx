@@ -1,12 +1,14 @@
+import React from 'react';
+import Service1 from '../components/sections/Services1';
+import Service2 from '../components/sections/Services2';
+
 const ServicesPage = () => {
   return (
-    <div className="py-10">
-      <h1 className="text-4xl font-bold text-center text-primary">Our Services</h1>
-      <p className="text-center text-secondary mt-4">
-        Intern working on this page: Build the Services offerings here.
-      </p>
-    </div>
-  );
-};
+    <>
+      <Service1/>
+      <Service2/>
+    </>
+  )
+}
 
-export default ServicesPage;
+export default ServicesPage

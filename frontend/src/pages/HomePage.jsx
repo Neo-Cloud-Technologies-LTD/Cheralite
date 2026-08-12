@@ -1,7 +1,7 @@
 import Home1 from '../components/sections/Home1';
 import Home2 from "../components/sections/Home2";
 import Home3 from '../components/sections/Home3';
-import Home4 from '../components/sections/Home4';
+import PortfolioSection from '../components/sections/Home4';
 
 const HomePage = () => {
   return (
@@ -9,7 +9,7 @@ const HomePage = () => {
       <Home1/>
       <Home2/>
       <Home3/>
-      <Home4/>
+      <PortfolioSection/>
     </>
   );
 };

@@ -6,7 +6,7 @@ export const Navbar = () => {
       <div className="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
         {/* Logo */}
         <Link to="/" className="text-2xl font-bold">
-          YourLogo
+          <img src="/Cheralite-logo.png" alt="" className="w-20 h-10"/>
         </Link>
 
         {/* Navigation Links */}

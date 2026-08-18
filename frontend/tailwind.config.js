@@ -12,6 +12,9 @@ export default {
       },
       fontFamily: {
         sans: ["Inter", "sans-serif"], //  font
+        // Added: Font from Stitch UI
+        body: ["Work Sans", "sans-serif"], 
+        heading: ["Hanken Grotesk", "sans-serif"] 
       },
     },
   },

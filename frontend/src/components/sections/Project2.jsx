@@ -28,11 +28,11 @@ const Project2 = () => {
   return (
     <section className="flex flex-col gap-5 px-5 lg:px-10 py-10 bg-[#FEFFFF] text-white text-center box-border">
       <div id="filterBar" className="flex flex-col gap-2">
-        <div id="filterOptions" className="flex w-full justify-between sm:justify-start sm:gap-10 font-medium font-body text-[#5E5E5D] text-sm lg:text-base">
-          <button type="button" className={`bg-transparent border-none p-0 font-inherit ${activeFilter === 'All Projects' ? 'text-[#002068] border-[#002068] border-b-2' : ''}`} onClick={() => setActiveFilter('All Projects')}>All Projects</button>
-          <button type="button" className={`bg-transparent border-none p-0 font-inherit ${activeFilter === 'Commercial' ? 'text-[#002068] border-[#002068] border-b-2' : ''}`} onClick={() => setActiveFilter('Commercial')}>Commercial</button>
-          <button type="button" className={`bg-transparent border-none p-0 font-inherit ${activeFilter === 'Residential' ? 'text-[#002068] border-[#002068] border-b-2' : ''}`} onClick={() => setActiveFilter('Residential')}>Residential</button>
-          <button type="button" className={`bg-transparent border-none p-0 font-inherit ${activeFilter === 'Infrastructure' ? 'text-[#002068] border-[#002068] border-b-2' : ''}`} onClick={() => setActiveFilter('Infrastructure')}>Infrastructure</button>
+        <div id="filterOptions" className="flex w-full justify-between sm:justify-start sm:gap-10 font-medium font-body text-[#717170] text-sm lg:text-base">
+          <button type="button" className={`bg-transparent p-0 font-inherit ${activeFilter === 'All Projects' ? 'text-[#002068] border-[#002068] border-b-2' : ''}`} onClick={() => setActiveFilter('All Projects')}>All Projects</button>
+          <button type="button" className={`bg-transparent p-0 font-inherit ${activeFilter === 'Commercial' ? 'text-[#002068] border-[#002068] border-b-2' : ''}`} onClick={() => setActiveFilter('Commercial')}>Commercial</button>
+          <button type="button" className={`bg-transparent p-0 font-inherit ${activeFilter === 'Residential' ? 'text-[#002068] border-[#002068] border-b-2' : ''}`} onClick={() => setActiveFilter('Residential')}>Residential</button>
+          <button type="button" className={`bg-transparent p-0 font-inherit ${activeFilter === 'Infrastructure' ? 'text-[#002068] border-[#002068] border-b-2' : ''}`} onClick={() => setActiveFilter('Infrastructure')}>Infrastructure</button>
         </div>
         <hr className="border-b-1 border-[#717170]"/>
       </div>

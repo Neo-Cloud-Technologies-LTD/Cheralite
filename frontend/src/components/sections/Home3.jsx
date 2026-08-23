@@ -1,7 +1,7 @@
 const Home3 = () => {
 
   return (
-    <section className="bg-blue-50 min-h-fit py-16 px-5 min-w-full max-w-full space-x-5">
+    <section className="bg-[#FEFFFF] min-h-fit py-16 px-5 min-w-full max-w-full space-x-5">
       <div className="flex flex-col min-h-screen max-w-[100vw] space-y-16 lg:grid xl:grid grid-cols-2">
         <div className="aspect-[4/5] md:aspect-auto lg:aspect-auto xl:aspect-[4/5] h-[45vh] lg:h-fit xl:h-fit xl:max-h-[90vh] w-auto max-w-[90vw] m-auto rounded-xl shadow-black shadow-2xl overflow-hidden">
           <img

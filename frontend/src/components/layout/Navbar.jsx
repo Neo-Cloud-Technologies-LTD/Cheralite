@@ -5,8 +5,12 @@ export const Navbar = () => {
     <nav className="bg-primary text-white shadow-lg">
       <div className="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
         {/* Logo */}
-        <Link to="/" className="text-2xl font-bold">
-          <img src="/Cheralite-logo.png" alt="" className="w-20 h-10"/>
+        <Link to="/" className="flex items-center">
+          <img
+            src="/Cheralite-logo-white.png"
+            alt="Cheralite Limited"
+            className="h-10 md:h-12 w-auto object-contain"
+          />
         </Link>
 
         {/* Navigation Links */}

@@ -7,8 +7,16 @@ export const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {/* Column 1 */}
           <div>
-            <h3 className="text-white font-bold text-lg">YourLogo</h3>
-            <p className="mt-2 text-sm">Building amazing web experiences.</p>
+            <Link to="/" className="inline-block mb-3">
+              <img
+                src="/Cheralite-logo-white.png"
+                alt="Cheralite Limited"
+                className="h-10 md:h-12 w-auto object-contain"
+              />
+            </Link>
+            <p className="mt-2 text-sm text-gray-400">
+              Delivering high-quality construction, engineering, procurement, and project management services.
+            </p>
           </div>
 
           {/* Column 2 */}
@@ -17,6 +25,7 @@ export const Footer = () => {
             <ul className="mt-2 space-y-1 text-sm">
               <li><Link to="/" className="hover:text-white transition">Home</Link></li>
               <li><Link to="/about" className="hover:text-white transition">About</Link></li>
+              <li><Link to="/projects" className="hover:text-white transition">Projects</Link></li>
               <li><Link to="/services" className="hover:text-white transition">Services</Link></li>
               <li><Link to="/contact" className="hover:text-white transition">Contact</Link></li>
             </ul>
@@ -25,13 +34,13 @@ export const Footer = () => {
           {/* Column 3 */}
           <div>
             <h4 className="text-white font-semibold">Contact</h4>
-            <p className="mt-2 text-sm">email@example.com</p>
+            <p className="mt-2 text-sm">info@cheralite.com</p>
             <p className="text-sm">+1 (555) 123-4567</p>
           </div>
         </div>
 
-        <div className="border-t border-gray-700 mt-6 pt-4 text-center text-sm">
-          &copy; {new Date().getFullYear()} YourLogo. All rights reserved.
+        <div className="border-t border-gray-700 mt-6 pt-4 text-center text-sm text-gray-400">
+          &copy; {new Date().getFullYear()} Cheralite Limited. All rights reserved.
         </div>
       </div>
     </footer>

@@ -1,12 +1,19 @@
 import React from "react";
+import { motion } from "motion/react";
 
 const Contact2 = () => {
   return (
-    <section className="w-full bg-[#faf9f7] px-6 py-[120px]">
+    <section className="w-full bg-[#faf9f7] px-6 py-[120px] overflow-hidden">
       <div className="mx-auto grid max-w-[1232px] grid-cols-1 gap-8 lg:grid-cols-[705px_1fr]">
         
         {/* ================= FORM CARD ================= */}
-        <div className="rounded-[4px] border border-[#dedede] bg-white px-12 py-[50px] shadow-[0_8px_25px_rgba(0,0,0,0.03)]">
+        <motion.div 
+          className="rounded-[4px] border border-[#dedede] bg-white px-12 py-[50px] shadow-[0_8px_25px_rgba(0,0,0,0.03)]"
+          initial={{ opacity: 0, x: -50 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          viewport={{ once: true, margin: "-80px" }}
+          transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
+        >
           <h2 className="mb-[36px] text-[30px] font-semibold leading-none tracking-[-0.5px] text-[#002b78]">
             Send an Inquiry
           </h2>
@@ -26,7 +33,7 @@ const Contact2 = () => {
                   id="fullName"
                   type="text"
                   placeholder="Jane Doe"
-                  className="w-full border-0 border-b border-[#c9cbd5] bg-transparent pb-[10px] text-[16px] text-[#77798a] outline-none placeholder:text-[#77798a] focus:border-[#002b78]"
+                  className="w-full border-0 border-b border-[#c9cbd5] bg-transparent pb-[10px] text-[16px] text-[#77798a] outline-none placeholder:text-[#77798a] focus:border-[#002b78] transition-colors"
                 />
               </div>
 
@@ -42,7 +49,7 @@ const Contact2 = () => {
                   id="email"
                   type="email"
                   placeholder="jane@company.com"
-                  className="w-full border-0 border-b border-[#c9cbd5] bg-transparent pb-[10px] text-[16px] text-[#77798a] outline-none placeholder:text-[#77798a] focus:border-[#002b78]"
+                  className="w-full border-0 border-b border-[#c9cbd5] bg-transparent pb-[10px] text-[16px] text-[#77798a] outline-none placeholder:text-[#77798a] focus:border-[#002b78] transition-colors"
                 />
               </div>
             </div>
@@ -60,7 +67,7 @@ const Contact2 = () => {
                 id="subject"
                 type="text"
                 placeholder="Project Consultation"
-                className="w-full border-0 border-b border-[#c9cbd5] bg-transparent pb-[10px] text-[16px] text-[#77798a] outline-none placeholder:text-[#77798a] focus:border-[#002b78]"
+                className="w-full border-0 border-b border-[#c9cbd5] bg-transparent pb-[10px] text-[16px] text-[#77798a] outline-none placeholder:text-[#77798a] focus:border-[#002b78] transition-colors"
               />
             </div>
 
@@ -77,24 +84,32 @@ const Contact2 = () => {
                 id="message"
                 rows="4"
                 placeholder="Please provide details about your project or inquiry..."
-                className="min-h-[130px] w-full resize-none rounded-[2px] border border-[#c9cbd5] bg-white px-4 py-4 text-[16px] text-[#77798a] outline-none placeholder:text-[#77798a] focus:border-[#002b78]"
+                className="min-h-[130px] w-full resize-none rounded-[2px] border border-[#c9cbd5] bg-white px-4 py-4 text-[16px] text-[#77798a] outline-none placeholder:text-[#77798a] focus:border-[#002b78] transition-colors"
               />
             </div>
 
             {/* Submit */}
-            <button
+            <motion.button
               type="submit"
               className="mt-[46px] inline-flex h-[56px] items-center gap-3 rounded-[10px] bg-[#002b78] px-[32px] text-[14px] font-semibold tracking-[0.4px] text-white transition-all duration-200 hover:bg-[#001f5a]"
+              whileHover={{ scale: 1.03 }}
+              whileTap={{ scale: 0.97 }}
             >
               Submit Inquiry
               <span className="text-[23px] leading-none">→</span>
-            </button>
+            </motion.button>
           </form>
-        </div>
+        </motion.div>
 
         {/* ================= OFFICE CARD ================= */}
         <div>
-          <div className="min-h-[578px] rounded-[4px] bg-[#25292b] px-12 py-[138px] text-white">
+          <motion.div 
+            className="min-h-[578px] rounded-[4px] bg-[#25292b] px-12 py-[138px] text-white"
+            initial={{ opacity: 0, x: 50 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true, margin: "-80px" }}
+            transition={{ duration: 0.8, delay: 0.15, ease: [0.16, 1, 0.3, 1] }}
+          >
             <h2 className="mb-[36px] text-[32px] font-medium leading-none tracking-[-0.5px]">
               Corporate Office
             </h2>
@@ -102,7 +117,13 @@ const Contact2 = () => {
             <div className="space-y-[27px]">
               
               {/* Address */}
-              <div className="flex gap-4">
+              <motion.div 
+                className="flex gap-4"
+                initial={{ opacity: 0, y: 15 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.5, delay: 0.25 }}
+              >
                 <div className="mt-[2px] flex w-4 shrink-0 justify-center text-[#a9adaf]">
                   <svg
                     width="20"
@@ -128,10 +149,16 @@ const Contact2 = () => {
                     Metropolis, NY 10001
                   </p>
                 </div>
-              </div>
+              </motion.div>
 
               {/* Email */}
-              <div className="flex gap-4">
+              <motion.div 
+                className="flex gap-4"
+                initial={{ opacity: 0, y: 15 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.5, delay: 0.35 }}
+              >
                 <div className="mt-[2px] flex w-4 shrink-0 justify-center text-[#a9adaf]">
                   <svg
                     width="21"
@@ -153,10 +180,16 @@ const Contact2 = () => {
                     inquiries@cheralite.com
                   </p>
                 </div>
-              </div>
+              </motion.div>
 
               {/* Phone */}
-              <div className="flex gap-4">
+              <motion.div 
+                className="flex gap-4"
+                initial={{ opacity: 0, y: 15 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.5, delay: 0.45 }}
+              >
                 <div className="mt-[2px] flex w-4 shrink-0 justify-center text-[#a9adaf]">
                   <svg
                     width="21"
@@ -178,13 +211,19 @@ const Contact2 = () => {
                     +1 (555) 019-8273
                   </p>
                 </div>
-              </div>
+              </motion.div>
 
             </div>
-          </div>
+          </motion.div>
 
           {/* Bottom divider */}
-          <div className="mt-8 h-[2px] w-full bg-[#e2e0de]" />
+          <motion.div 
+            className="mt-8 h-[2px] w-full bg-[#e2e0de]"
+            initial={{ scaleX: 0 }}
+            whileInView={{ scaleX: 1 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.8, delay: 0.5 }}
+          />
         </div>
       </div>
     </section>
